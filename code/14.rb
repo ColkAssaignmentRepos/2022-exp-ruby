@@ -9,5 +9,6 @@ def fact(x, r)
 end
 
 if __FILE__ == $0
+  # => 120
   print fact(5, 1)
 end

@@ -5,7 +5,7 @@ if __FILE__ == $0
 
   # Validate the input is in the range: 0 ~ 100.
   unless 0 <= chance_of_rain && chance_of_rain <= 100
-    raise "Unexpected input error. Please input valid number. ( 0 ~ 100 )"
+    raise RuntimeError, "Unexpected input error. Please input valid number. ( 0 ~ 100 )"
   end
 
   if chance_of_rain >= 50

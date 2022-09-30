@@ -5,8 +5,8 @@ if __FILE__ == $0
 
   # Validate the input is in the range: 0 ~ 100.
   unless 0 <= score && score <= 100
-    puts "不適切な点数です"
-    raise "Unexpected input error. Please input valid number. ( 0 ~ 100 )"
+    puts "不適切な点数が入力されました"
+    raise RuntimeError, "Unexpected input error. Please input valid number. ( 0 ~ 100 )"
   end
 
   # The variable 'score' is guaranteed whose value is in the range of 0 ~ 100.

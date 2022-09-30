@@ -5,7 +5,7 @@ if __FILE__ == $0
 
   # Validate the input is in the range: 0 ~ 100.
   unless 0 <= x && x <= 100
-    raise "Unexpected input error. Please input valid number. ( 0 ~ 100 )"
+    raise RuntimeError, "Unexpected input error. Please input valid number. ( 0 ~ 100 )"
   end
 
   if (0 <= x && x < 100) && x != 30
