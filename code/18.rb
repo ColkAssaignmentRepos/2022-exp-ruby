@@ -1,7 +1,7 @@
 def rev(array)
   # 型バリデーション
   unless array.is_a?(Array)
-    raise TypeError, "expected 'Array' type variable, but got #{array.class}"
+    raise TypeError, "Expected 'Array' type variable, but got #{array.class}"
   end
 
   reversed = []

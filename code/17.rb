@@ -1,7 +1,7 @@
 def plus(a, b)
   # 配列長のバリデーション
   if a.length != b.length
-    raise StandardError, "value error: all arrays must have the same length, but got #{a.length} and #{b.length}."
+    raise StandardError, "All arrays must have the same length, but got #{a.length} and #{b.length}."
   end
 
   # Ruby の配列は、Python と同様で参照渡しであるため、
